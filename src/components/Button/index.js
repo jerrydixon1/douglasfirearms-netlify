@@ -17,6 +17,7 @@ const ButtonElement = styled.button`
   text-shadow: 3px 5px 6px rgba(0, 0, 0, 0.52);
   letter-spacing: 1.65px;
   text-decoration: none;
+  text-transform: uppercase;
   transition: ${transitions.default};
   &:hover {
     cursor: pointer;
