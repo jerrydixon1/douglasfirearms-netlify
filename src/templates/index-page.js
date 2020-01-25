@@ -2,9 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 
-import Layout from '../components/Layout'
-import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
+import Layout from '@/components/Layout'
+import Features from '@/components/Features'
+import BlogRoll from '@/components/BlogRoll'
+import Button from '@/components/Button'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 
 export const IndexPageTemplate = ({
   image,
@@ -36,8 +40,9 @@ export const IndexPageTemplate = ({
           flexDirection: 'column',
         }}
       >
+        <Button type="submit" inverted>This is a button! Yoooooo</Button>
         <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+          className="text-header"
           style={{
             boxShadow:
               'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
@@ -45,6 +50,7 @@ export const IndexPageTemplate = ({
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
+            fontFamily: 'Raleway'
           }}
         >
           {title}
@@ -60,6 +66,7 @@ export const IndexPageTemplate = ({
             padding: '0.25em',
           }}
         >
+          <FontAwesomeIcon icon={faFacebook} />
           {subheading}
         </h3>
       </div>
