@@ -4,12 +4,14 @@ import Footer from '@/components/Footer'
 import Sidebar from '@/components/Sidebar'
 import useSiteMetadata from '@/components/SiteMetadata'
 import GlobalStyle from './styles'
+import { Reset } from 'styled-reset'
 import { withPrefix } from 'gatsby'
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
     <React.Fragment>
+      <Reset />
       <GlobalStyle />
       <Helmet>
         <html lang="en" />
