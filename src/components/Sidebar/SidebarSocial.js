@@ -9,6 +9,7 @@ const SocialList = styled.ul`
   align-items: center;
   justify-content: center;
   margin-top: 25px;
+  margin-bottom: 0;
   font-size: 30px;
   text-align: center;
   list-style: none;
