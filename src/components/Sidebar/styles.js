@@ -1,8 +1,11 @@
+import React from 'react'
 import styled from 'styled-components'
 import fonts from '@base/fonts'
 import colors from '@base/colors'
 import sizings from '@base/sizings'
+import Button from '@components/Button'
 
+/* Sidebar containers */
 export const SidebarWrapper = styled.aside`
   position: fixed;
   z-index: 5;
@@ -26,9 +29,11 @@ export const Sidebar = styled.nav `
   align-items: center;
 `
 
+/* Sidebar list */
 export const SidebarList = styled.ul`
   margin: 0;
-  padding: 42px 0;
+  padding: 25px 0;
+  margin: 16px 0;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -54,3 +59,13 @@ export const SidebarListItem = styled.li`
     }
   }
 `
+
+/* Sidebar CTA button */
+const ButtonComponent = props => <Button hoverTextColor={colors.accentLight}>{props.children}</Button>
+export const SidebarButton = styled(ButtonComponent)`
+  width: 100%;
+  display: block;
+  margin-top: 16px;
+`
+
+/* Sidebar social footer */

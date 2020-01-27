@@ -3,8 +3,10 @@ import {
   SidebarWrapper,
   Sidebar,
   SidebarList,
-  SidebarListItem
+  SidebarListItem,
+  SidebarButton
 } from './styles'
+import SidebarSocial from './SidebarSocial'
 import Link from 'gatsby-link'
 import Logo from '@components/Logo'
 
@@ -39,6 +41,8 @@ export default () => (
           </Link>
         </SidebarListItem>
       </SidebarList>
+      <SidebarButton>Sign up for a course</SidebarButton>
+      <SidebarSocial />
     </Sidebar>
   </SidebarWrapper>
 )
