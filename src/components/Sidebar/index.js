@@ -6,11 +6,12 @@ import {
   SidebarListItem
 } from './styles'
 import Link from 'gatsby-link'
-
+import Logo from '@components/Logo'
 
 export default () => (
   <SidebarWrapper>
     <Sidebar>
+      <Logo />
       <SidebarList>
         <SidebarListItem>
           <Link to="/#about">
