@@ -1,8 +1,10 @@
 import fonts from '@base/fonts'
 import colors from '@base/colors'
+import sizings from '@base/sizings'
+import styled from 'styled-components'
 import { createGlobalStyle } from 'styled-components'
 
-export default createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
   /* universal box-sizing */
   *, *::before, *::after {
     box-sizing: border-box;
@@ -53,4 +55,8 @@ export default createGlobalStyle`
       line-height: 33px;
     }
   }
+`
+
+export const Main = styled.main`
+  padding-left: ${sizings.sidenavWidth}px;
 `

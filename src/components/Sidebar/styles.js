@@ -20,6 +20,7 @@ export const SidebarWrapper = styled.aside`
 `
 
 export const Sidebar = styled.nav `
+  height: 100%;
   max-width: 248px;
   margin: 0 auto;
   padding: 87px 0;
@@ -38,6 +39,7 @@ export const SidebarList = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-shrink: 0;
 `
 
 export const SidebarListItem = styled.li`

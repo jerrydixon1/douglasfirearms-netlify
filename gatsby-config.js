@@ -35,7 +35,7 @@ module.exports = {
         alias: {
           '@': path.resolve(__dirname, 'src'),
           '@base': path.resolve(__dirname, 'src/components/base'),
-          '@img': path.resolve(__dirname, 'src/img'),
+          '@img': path.resolve(__dirname, 'static/img'),
           '@pages': path.resolve(__dirname, 'src/pages'),
           '@components': path.resolve(__dirname, 'src/components'),
           '@templates': path.resolve(__dirname, 'src/templates'),

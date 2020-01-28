@@ -1,9 +1,8 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import Footer from '@/components/Footer'
 import Sidebar from '@/components/Sidebar'
 import useSiteMetadata from '@/components/SiteMetadata'
-import GlobalStyle from './styles'
+import { GlobalStyle, Main } from './styles'
 import { Reset } from 'styled-reset'
 import { withPrefix } from 'gatsby'
 
@@ -52,8 +51,7 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <Sidebar />
-      <div>{children}</div>
-      <Footer />
+      <Main>{children}</Main>
     </React.Fragment>
   )
 }

@@ -41,8 +41,10 @@ export default () => (
           </Link>
         </SidebarListItem>
       </SidebarList>
-      <SidebarButton>Sign up for a course</SidebarButton>
-      <SidebarSocial />
+      <div className="footer">
+        <SidebarButton>Sign up for a course</SidebarButton>
+        <SidebarSocial />
+      </div>
     </Sidebar>
   </SidebarWrapper>
 )
