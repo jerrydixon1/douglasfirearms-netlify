@@ -28,6 +28,8 @@ export const Canon = styled.h1`
   ${fontSize('48px')}
   ${lineHeight('56px')}
 `
+
+// Canon subheader
 export const GreatPrimer = styled.p`
   ${fontSize('27px')}
   ${lineHeight('33px')}
@@ -40,4 +42,17 @@ export const Trafalgar = styled.h2`
   ${headerStyles}
   ${fontSize('44px')}
   ${lineHeight('50px')}
+`
+
+// Body copy
+export const BodyCopy = styled.p`
+  font-family: ${fonts.text};
+  ${color(colors.accentDark)}
+  ${fontSize('20px')}
+  ${lineHeight('24px')}
+
+  ${props => props.type === 'light' && `
+    color: ${props.color || colors.accentLight};
+    text-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+  `}
 `
