@@ -1,9 +1,7 @@
 ---
 templateKey: index-page
 title: 'Personal, certified, safe.'
-subtitle: >-
-  Douglas Firearms Training is dedicated to the safe instruction of basic
-  firearms ownership, marksmanship and Ohio’s concealed handgun certification.
+subtitle: test test test
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
