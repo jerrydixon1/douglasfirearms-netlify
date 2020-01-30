@@ -14,6 +14,7 @@ import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 export const IndexPageTemplate = ({
   image,
   title,
+  subtitle,
   heading,
   subheading,
   mainpitch,
@@ -21,7 +22,7 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    <Hero />
+    <Hero title={title} subtitle={subtitle} />
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
@@ -75,6 +76,7 @@ export const IndexPageTemplate = ({
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
+  subtitle: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
@@ -92,6 +94,7 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
+        subtitle={frontmatter.subtitle}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
@@ -117,6 +120,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
+        subtitle
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {

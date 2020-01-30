@@ -58,8 +58,8 @@ export default props => (
   <Hero>
     <HeroContainer>
       <div>
-        <Canon type="light">Personal, certified, safe.</Canon>
-        <GreatPrimer>Douglas Firearms Training is dedicated to the safe instruction of basic firearms ownership, marksmanship and Ohio’s concealed handgun certification.</GreatPrimer>
+        <Canon type="light">{props.title}</Canon>
+        <GreatPrimer>{props.subtitle}</GreatPrimer>
       </div>  
     </HeroContainer>
     <HeroBackgroundImage />
